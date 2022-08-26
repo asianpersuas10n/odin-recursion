@@ -36,7 +36,7 @@ function mergeSort(arr) {
     return arr;
   }
   let leftArr = arr.slice(0, Math.floor(arr.length / 2));
-  let rightArr = arr.slice(Math.round(arr.length / 2, arr.length));
+  let rightArr = arr.slice(Math.floor(arr.length / 2, arr.length));
 
   return merge(mergeSort(leftArr), mergeSort(rightArr));
 }
